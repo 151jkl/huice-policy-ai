@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState, type SVGProps } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 /* ============================================================
@@ -21,18 +21,10 @@ function IconPlay() {
   );
 }
 
-function IconSparkle() {
+function IconSparkle(props: SVGProps<SVGSVGElement>) {
   return (
-    <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+    <svg {...props} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
       <path d="M12 2v4M12 18v4M2 12h4M18 12h4M5 5l3 3M16 16l3 3M5 19l3-3M16 8l3-3" strokeLinecap="round" />
-    </svg>
-  );
-}
-
-function IconCheck() {
-  return (
-    <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-      <path d="M5 13l4 4L19 7" strokeLinecap="round" strokeLinejoin="round" />
     </svg>
   );
 }
