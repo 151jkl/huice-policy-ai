@@ -1,0 +1,4 @@
+# Netlify SPA fallback: 所有未匹配的路由都指向 index.html
+# 这让 React Router 能正确处理 /analysis、/eligibility 等前端路由
+
+/*    /index.html   200
