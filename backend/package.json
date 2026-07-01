@@ -1,0 +1,28 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "政策翻译官后端 - Node.js Express + OpenAI 兼容 LLM 服务",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "node src/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "express",
+    "llm",
+    "policy",
+    "qwen"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ajv": "^8.20.0",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "multer": "^2.2.0",
+    "openai": "^6.45.0",
+    "pdf-parse": "^2.4.5"
+  }
+}
